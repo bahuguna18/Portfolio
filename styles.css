@@ -2352,5 +2352,33 @@ a {
     min-height: 430px;
 }
 
+/* 9. Clickable Profile Cards Utility */
+.clickable-card {
+    text-decoration: none !important;
+    color: inherit !important;
+    cursor: pointer;
+    display: flex;
+}
+
+.clickable-card:hover {
+    background: rgba(255, 255, 255, 0.04) !important;
+}
+
+.stat-card.clickable-card:hover {
+    transform: translateY(-8px) scale(1.03) !important;
+}
+
+.modal-ach-card.clickable-card:hover {
+    transform: translateY(-3px) scale(1.01) !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border-color: var(--accent-cyan) !important;
+    box-shadow: 0 5px 15px rgba(6, 182, 212, 0.15);
+}
+
+.modal-ach-card.purple.clickable-card:hover {
+    border-color: var(--accent-purple) !important;
+    box-shadow: 0 5px 15px rgba(168, 85, 247, 0.15);
+}
+
 
 

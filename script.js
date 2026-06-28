@@ -297,8 +297,8 @@ document.addEventListener('DOMContentLoaded', () => {
             { text: 'Fetching verified competitive records & academic logs...', type: 'system-msg' },
             { text: `
                 <div class="terminal-list">
-                    <div class="terminal-list-item"><strong>LeetCode Knight:</strong> Top 3% globally (2000+ rating | handle: WhyAlwaysMe)</div>
-                    <div class="terminal-list-item"><strong>Codeforces Specialist:</strong> Rating 1590+ (handle: WowCoder)</div>
+                    <div class="terminal-list-item"><strong>LeetCode Knight:</strong> Top 2% globally (2000+ rating | handle: <a href="https://leetcode.com/u/WhyAlways_Me/" target="_blank" style="color:var(--accent-cyan);">WhyAlways_Me</a>)</div>
+                    <div class="terminal-list-item"><strong>Codeforces Specialist:</strong> Rating 1590+ (handle: <a href="https://codeforces.com/profile/WowCoder" target="_blank" style="color:var(--accent-purple);">WowCoder</a>)</div>
                     <div class="terminal-list-item"><strong>CodeChef Global:</strong> Rank 13 worldwide</div>
                     <div class="terminal-list-item"><strong>B.Tech Computer Science:</strong> Graphic Era Hill University (CGPA 83.33%)</div>
                 </div>
@@ -440,22 +440,22 @@ document.addEventListener('DOMContentLoaded', () => {
         `,
         'achievements': `
             <div class="modal-ach-grid">
-                <div class="modal-ach-card">
+                <a href="https://leetcode.com/u/WhyAlways_Me/" target="_blank" class="modal-ach-card clickable-card">
                     <span class="modal-ach-title">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="modal-ach-icon"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"></path><path d="M13 19h8v-8"></path><path d="M16 16 20 20"></path><path d="M19 21h2v-2"></path></svg>
                         LeetCode
                     </span>
                     <span class="modal-ach-metric">Knight</span>
-                    <span class="modal-ach-desc">Rating 2000+, Top 3% globally (Handle: WhyAlwaysMe)</span>
-                </div>
-                <div class="modal-ach-card purple">
+                    <span class="modal-ach-desc">Rating 2000+, Top 2% globally (Handle: WhyAlways_Me)</span>
+                </a>
+                <a href="https://codeforces.com/profile/WowCoder" target="_blank" class="modal-ach-card purple clickable-card">
                     <span class="modal-ach-title">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="modal-ach-icon"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
                         Codeforces
                     </span>
                     <span class="modal-ach-metric">Specialist</span>
                     <span class="modal-ach-desc">Rating exceeding 1590 (Handle: WowCoder)</span>
-                </div>
+                </a>
                 <div class="modal-ach-card indigo">
                     <span class="modal-ach-title">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="modal-ach-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
@@ -481,7 +481,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const cleanType = type.trim().toLowerCase();
         
         if (modalTemplates[cleanType]) {
-            modalTitleText.textContent = `System Diagnostics: [CMD_${cleanType.toUpperCase()}_PAYLOAD]`;
+            const displayName = cleanType.charAt(0).toUpperCase() + cleanType.slice(1);
+            modalTitleText.textContent = displayName;
             modalBodyContent.innerHTML = modalTemplates[cleanType];
             terminalModal.classList.add('active');
             document.body.style.overflow = 'hidden'; // Lock body scroll
