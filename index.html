@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atul Bahuguna | Agentic AI Architect & Data Scientist Portfolio</title>
+    <meta name="description" content="Portfolio of Atul Bahuguna, Consultant - Data Scientist specializing in Agentic AI, Generative AI, RAG pipelines, and cloud systems.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Canvas -->
+    <canvas id="canvas-bg"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>ATUL<span class="logo-accent">.AI /&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="Atul_Bahuguna_Resume_2026.pdf" target="_blank" class="btn btn-primary resume-btn">
+                    <i data-lucide="download" class="btn-icon"></i> Resume
+                </a>
+            </nav>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-container grid">
+                <div class="hero-content scroll-reveal">
+                    <div class="badge">
+                        <span class="badge-dot"></span> Available for Projects & Consulting
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-glow">Atul Bahuguna</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I build <span id="typewriter" class="typewriter-text"></span>
+                    </h2>
+                    <p class="hero-description">
+                        Consultant & Data Scientist specializing in architecting <strong>Agentic AI Systems</strong>, Multi-Agent Orchestration, and end-to-end RAG/OCR pipelines. Leveraging Microsoft Agent Framework and Microsoft Azure to automate enterprise workflows.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">Explore Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/bahuguna18" target="_blank" class="social-link" title="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/atul-bahuguna" target="_blank" class="social-link" title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="mailto:atul.bahuguna100@gmail.com" class="social-link" title="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                        <a href="tel:+917982561426" class="social-link" title="Phone">
+                            <i data-lucide="phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive AI Terminal -->
+                <div class="hero-terminal-wrapper scroll-reveal">
+                    <div class="terminal-card">
+                        <div class="terminal-header">
+                            <div class="terminal-controls">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="terminal-title">atul@agent-terminal:~</div>
+                        </div>
+                        <div class="terminal-body" id="terminal-body">
+                            <div class="terminal-line system-msg">
+                                <span class="term-time">[14:48:11]</span> System initialized. Multi-agent core online.
+                            </div>
+                            <div class="terminal-line system-msg">
+                                <span class="term-time">[14:48:12]</span> AtulBahugunaAgent version 2.0 connected.
+                            </div>
+                            <div class="terminal-line response-line">
+                                <span class="term-prompt">&gt;</span> Welcome! Ask me about Atul by typing a command below or clicking one of the shortcuts.
+                            </div>
+                        </div>
+                        <div class="terminal-shortcuts">
+                            <button class="shortcut-btn" data-cmd="/about">/about</button>
+                            <button class="shortcut-btn" data-cmd="/experience">/experience</button>
+                            <button class="shortcut-btn" data-cmd="/skills">/skills</button>
+                            <button class="shortcut-btn" data-cmd="/projects">/projects</button>
+                            <button class="shortcut-btn" data-cmd="/achievements">/achievements</button>
+                            <button class="shortcut-btn" data-cmd="/clear">/clear</button>
+                        </div>
+                        <form class="terminal-input-form" id="terminal-form">
+                            <span class="term-prompt">guest@atul-web:~$</span>
+                            <input type="text" id="terminal-input" placeholder="Type '/help' or select a shortcut..." autocomplete="off">
+                            <button type="submit" class="terminal-send-btn" aria-label="Run command">
+                                <i data-lucide="play" size="14"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Stats Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Professional Overview</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-grid grid">
+                    <div class="about-text scroll-reveal">
+                        <h3>Combining Competitive Coding with Enterprise AI</h3>
+                        <p>
+                            I am a Data Scientist / AI Engineer dedicated to pushing the limits of <strong>Generative AI</strong> and <strong>Agentic Architectures</strong>. With a deep background in advanced data structures and algorithms, I translate complex algorithmic concepts into highly efficient, scalable, and secure AI systems.
+                        </p>
+                        <p>
+                            From deploying serverless Azure Functions to designing real-time meeting transcription platforms and orchestrating multi-agent networks, I build solutions that save hundreds of hours of manual labor and significantly cut down latency.
+                        </p>
+                    </div>
+                    <div class="stats-grid grid scroll-reveal">
+                        <!-- Stat 1 -->
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper cyan">
+                                <i data-lucide="swords"></i>
+                            </div>
+                            <div class="stat-num">Knight</div>
+                            <div class="stat-label">LeetCode (Top 3% Globally, 2000+ Rating)</div>
+                        </div>
+                        <!-- Stat 2 -->
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper purple">
+                                <i data-lucide="trophy"></i>
+                            </div>
+                            <div class="stat-num">Rank 13</div>
+                            <div class="stat-label">CodeChef Global Coding Contest</div>
+                        </div>
+                        <!-- Stat 3 -->
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper indigo">
+                                <i data-lucide="award"></i>
+                            </div>
+                            <div class="stat-num">Specialist</div>
+                            <div class="stat-label">Codeforces (Rating 1590+)</div>
+                        </div>
+                        <!-- Stat 4 -->
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper green">
+                                <i data-lucide="graduation-cap"></i>
+                            </div>
+                            <div class="stat-num">83.33%</div>
+                            <div class="stat-label">B.Tech CS | Graphic Era Hill University</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience" id="experience">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="timeline">
+                    <!-- Delphi Consulting -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Dec 2025 – Present</div>
+                        <div class="timeline-card-content">
+                            <div class="timeline-card-header">
+                                <div class="timeline-job-info">
+                                    <h3 class="job-role">Consultant – Data Scientist | Healthcare AI</h3>
+                                    <h4 class="company-name">Delphi Consulting UAE</h4>
+                                </div>
+                                <span class="job-type-badge">Remote</span>
+                            </div>
+                            <ul class="job-highlights">
+                                <li>Serving one of the UAE's leading healthcare organizations, architected a multi-agent AI system using Microsoft Agent Framework, enabling autonomous task orchestration, real-time decision-making, and seamless collaboration across enterprise workflows—reducing manual coordination effort by 50%, with adoption exceeding 60% of the organization.</li>
+                                <li><strong>Agentic RAG & OCR:</strong> Engineered end-to-end RAG and OCR pipelines for document processing, integrating fast vector retrieval that reduced query latency by 40% and improved answer accuracy at scale.</li>
+                                <li><strong>Real-Time Voice & Transcription:</strong> Implemented Real-Time Meeting Transcription (RTMT) with regex-based content filtering to sanitize meeting context and speaker diarization with 90%+ speaker-attribution accuracy.</li>
+                                <li><strong>Agentic Tools:</strong> Shipped meeting intelligence tools (auto-MOM, real-time summarization, action items) reducing post-meeting documentation time by 65%.</li>
+                                <li><strong>MS Teams Integration:</strong> Integrated AI voice agents with Microsoft Teams, enabling hands-free workflow triggers, database queries, and task assignments.</li>
+                                <li><strong>Leadership & Standards:</strong> Led a cross-functional team of 4, mentored 2 junior engineers, and established technical standards for agent design, RAG architecture, and security.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>Microsoft Agent Framework</span>
+                                <span>RAG</span>
+                                <span>Azure Cognitive Services</span>
+                                <span>Python</span>
+                                <span>Teams Voice AI</span>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MAQ Software -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Apr 2024 – Nov 2025</div>
+                        <div class="timeline-card-content">
+                            <div class="timeline-card-header">
+                                <div class="timeline-job-info">
+                                    <h3 class="job-role">Software Engineer I</h3>
+                                    <h4 class="company-name">MAQ Software</h4>
+                                </div>
+                                <span class="job-type-badge">Noida, India</span>
+                            </div>
+                            <ul class="job-highlights">
+                                <li><strong>Generative AI & LLMs:</strong> Spearheaded a GenAI initiative for extracting entities, stamps, and signatures from large documents, serving 3,000+ users; optimized prompts and fine-tuned GPT-4 models, achieving a 40% improvement in AI extraction accuracy.</li>
+                                <li><strong>Semantic Search Indexing:</strong> Configured and deployed a semantic search index mapping between text and stamp/signature image content across multiple languages.</li>
+                                <li><strong>Cloud Infrastructure:</strong> Built custom containerized applications in Azure Function Apps using Docker and provisioned resources via ARM templates.</li>
+                                <li><strong>Legal Recommendation Engine:</strong> Designed a comparison system collating extracted data against legal cases, accelerating legal research by 45%.</li>
+                                <li><strong>Data Privacy:</strong> Implemented GDPR-compliant extraction with automated PII removal and retry mechanisms.</li>
+                                <li><strong>Data Pipelines:</strong> Managed large-scale API integrations and data pipelines, improving processing efficiency by 25%.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>GPT-4</span>
+                                <span>Azure Functions</span>
+                                <span>ARM Templates</span>
+                                <span>Docker</span>
+                                <span>Semantic Search</span>
+                                <span>GDPR PII</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LTIMindtree -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Feb 2023 – Jul 2023</div>
+                        <div class="timeline-card-content">
+                            <div class="timeline-card-header">
+                                <div class="timeline-job-info">
+                                    <h3 class="job-role">Software Development Engineer Intern</h3>
+                                    <h4 class="company-name">LTIMindtree</h4>
+                                </div>
+                                <span class="job-type-badge">Remote</span>
+                            </div>
+                            <ul class="job-highlights">
+                                <li><strong>Document Analysis:</strong> Contributed to Generative AI document analysis tools using Azure AI Services and LLM solutions for data categorization from semi-structured files.</li>
+                                <li><strong>Analytics Pipelines:</strong> Collaborated on building downstream analytics pipelines and cloud-based AI systems, improving technical skills by 25%.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>Azure AI Services</span>
+                                <span>LLMs</span>
+                                <span>Python</span>
+                                <span>Data Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-container grid">
+                    <!-- Programming -->
+                    <div class="skills-category-card scroll-reveal">
+                        <div class="skills-category-header">
+                            <i data-lucide="code-2" class="category-icon"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item" data-desc="Primary language used for AI, Data Science, backend development, and RAG pipelines.">Python</div>
+                            <div class="skill-item" data-desc="Utilized for advanced data structures, competitive programming (LeetCode Knight, Codeforces Specialist), and high-performance applications.">C++</div>
+                            <div class="skill-item" data-desc="Used for configuring automation, API scripts, and system setups on Linux.">Bash / Shell</div>
+                            <div class="skill-item" data-desc="Writing structured databases, performing analytical queries, and integrating with data pipelines.">SQL</div>
+                        </div>
+                    </div>
+
+                    <!-- AI & ML -->
+                    <div class="skills-category-card scroll-reveal">
+                        <div class="skills-category-header">
+                            <i data-lucide="brain" class="category-icon"></i>
+                            <h3>AI & ML Frameworks</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item" data-desc="Orchestrating multi-agent systems, task allocation, and autonomous agent collaboration.">Agentic AI & MS Agent Framework</div>
+                            <div class="skill-item" data-desc="Designing vector databases, semantic index search, embedding models, and fast retrieval.">Retrieval-Augmented Generation (RAG)</div>
+                            <div class="skill-item" data-desc="Designing prompts, optimizing context window, and utilizing GPT-4, OpenAI, and Claude models.">Prompt Engineering & GenAI</div>
+                            <div class="skill-item" data-desc="Fine-tuning GPT models and deploying them on cloud nodes for extraction and classification.">Model Fine-Tuning & Deployment</div>
+                            <div class="skill-item" data-desc="Utilized for deep learning projects, auto-encoder systems, and neural network training.">TensorFlow / PyTorch / Keras</div>
+                            <div class="skill-item" data-desc="Chaining prompts, handling document loaders, and setting up LLM chains.">LangChain</div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="skills-category-card scroll-reveal">
+                        <div class="skills-category-header">
+                            <i data-lucide="cloud" class="category-icon"></i>
+                            <h3>Cloud & DevOps</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item" data-desc="Primary cloud platform: Azure Functions, Document Intelligence, OpenAI Services, Cognitive Services.">Microsoft Azure</div>
+                            <div class="skill-item" data-desc="Containerizing Azure Function Apps, running local development instances, and ensuring environment consistency.">Docker</div>
+                            <div class="skill-item" data-desc="Infrastructure as Code (IaC) for automated deployments and resource governance.">ARM Templates</div>
+                            <div class="skill-item" data-desc="Automating test suites, build tasks, and continuous deployment to Azure functions.">CI/CD Pipelines</div>
+                            <div class="skill-item" data-desc="Operating system of choice for hosting backends, server setups, and running terminal workflows.">Linux</div>
+                        </div>
+                    </div>
+
+                    <!-- Other -->
+                    <div class="skills-category-card scroll-reveal">
+                        <div class="skills-category-header">
+                            <i data-lucide="cpu" class="category-icon"></i>
+                            <h3>Other Technologies</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item" data-desc="Creating bot connections, voice integration, and workflow hooks inside MS Teams channels.">Microsoft Teams Integration</div>
+                            <div class="skill-item" data-desc="Real-time meeting audio processing, diarization, and live translation.">Real-Time Voice AI (RTMT) Diarization</div>
+                            <div class="skill-item" data-desc="Low-code integrations, automations, and custom Power BI dashboard reporting.">Power Platform & Power BI</div>
+                            <div class="skill-item" data-desc="Strict PII redaction and encrypted document security filtering for compliance (GDPR).">Regex Content Filtering & PII Removal</div>
+                            <div class="skill-item" data-desc="Writing modular, clean, and reusable object-oriented codebases in C++ and Python.">Object-Oriented Programming (OOP)</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Interactive Skill Details Panel -->
+                <div class="skill-details-panel scroll-reveal" id="skill-details">
+                    <p class="panel-placeholder"><i data-lucide="info" class="inline-icon"></i> Click any skill chip above to view real-world implementation details from my resume.</p>
+                    <div class="panel-content hidden" id="skill-details-content">
+                        <h4 id="skill-detail-title">Skill Title</h4>
+                        <p id="skill-detail-desc">Skill description goes here...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Key Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="projects-grid grid">
+                    <!-- Project 1 -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-img-placeholder">
+                            <div class="voice-bot-animation-mini">
+                                <div class="sound-wave left">
+                                    <div class="wave-bar wb1"></div>
+                                    <div class="wave-bar wb2"></div>
+                                    <div class="wave-bar wb3"></div>
+                                </div>
+                                <div class="voice-bot-core">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bot-icon"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+                                </div>
+                                <div class="sound-wave right">
+                                    <div class="wave-bar wb4"></div>
+                                    <div class="wave-bar wb5"></div>
+                                    <div class="wave-bar wb3"></div>
+                                </div>
+                            </div>
+                            <div class="project-card-badge">Agentic AI</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Real-Time Meeting Intelligence</h3>
+                            <span class="project-meta">Delphi Consulting UAE</span>
+                            <p>
+                                Architected a full-stack meeting AI system (serving 60%+ of the organization) featuring RTMT-based live transcription, speaker diarization, regex context filters, and agentic MOM/action extraction via Microsoft Agent Framework.
+                            </p>
+                            <div class="project-tags">
+                                <span>Microsoft Agent Framework</span>
+                                <span>RTMT Voice</span>
+                                <span>Azure OpenAI</span>
+                                <span>Teams Integration</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-img-placeholder">
+                            <div class="extraction-animation-mini">
+                                <div class="scan-line"></div>
+                                <div class="doc-outline">
+                                    <div class="doc-text-line"></div>
+                                    <div class="doc-text-line short"></div>
+                                    <div class="doc-stamp"></div>
+                                </div>
+                            </div>
+                            <div class="project-card-badge">GenAI / RAG</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>GenAI Entity & Asset Extraction</h3>
+                            <span class="project-meta">MAQ Software</span>
+                            <p>
+                                Spearheaded a Generative AI entity & signature extraction platform serving 3,000+ users. Fine-tuned GPT-4 models to achieve a 40% extraction accuracy boost. Deployed containerized Azure Functions with Docker and PII scrub filters.
+                            </p>
+                            <div class="project-tags">
+                                <span>GPT-4 Fine-tuning</span>
+                                <span>Azure Functions</span>
+                                <span>Docker</span>
+                                <span>PII Masking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-img-placeholder">
+                            <div class="chart-animation-mini">
+                                <div class="bar b1"></div>
+                                <div class="bar b2"></div>
+                                <div class="bar b3"></div>
+                                <div class="bar b4"></div>
+                            </div>
+                            <div class="project-card-badge">BI & Analytics</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Customer Report Card System</h3>
+                            <span class="project-meta">Enterprise Reporting Solution</span>
+                            <p>
+                                Engineered a customer-focused reporting dashboard with dynamic parameter scaling, Row-Level Security (RLS) policies, custom DAX measures in the Power BI semantic layer, and automated report scheduling. Reduced manual report generation time by 70%.
+                            </p>
+                            <div class="project-tags">
+                                <span>Power BI</span>
+                                <span>DAX</span>
+                                <span>RLS Security</span>
+                                <span>Automated Scheduling</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-img-placeholder">
+                            <div class="image-completion-mini">
+                                <div class="grid-pixelated"></div>
+                                <div class="reconstructed-circle"></div>
+                            </div>
+                            <div class="project-card-badge">Deep Learning</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Image Completion Auto-encoders</h3>
+                            <span class="project-meta">Research Project</span>
+                            <p>
+                                Developed a deep learning neural network solution utilizing convolutional auto-encoders to predict missing image portions and remove motion blur. Designed, optimized, and tested custom architectures in TensorFlow, PyTorch, and Keras for contextually accurate reconstruction.
+                            </p>
+                            <div class="project-tags">
+                                <span>TensorFlow</span>
+                                <span>PyTorch</span>
+                                <span>Auto-encoders</span>
+                                <span>Computer Vision</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Send a Message</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-grid grid">
+                    <div class="contact-info scroll-reveal">
+                        <h3>Connect with Atul</h3>
+                        <p>
+                            Have an interesting project, consulting opportunity, or just want to chat about Agentic AI and data pipelines? Drop a message using the payload terminal, or reach out directly via these channels:
+                        </p>
+                        <div class="contact-details">
+                            <a href="mailto:atul.bahuguna100@gmail.com" class="contact-item">
+                                <i data-lucide="mail" class="contact-icon"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <span>atul.bahuguna100@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="tel:+917982561426" class="contact-item">
+                                <i data-lucide="phone" class="contact-icon"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <span>+91 7982561426</span>
+                                </div>
+                            </a>
+                            <a href="https://linkedin.com/in/atul-bahuguna" target="_blank" class="contact-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                <div>
+                                    <h4>LinkedIn</h4>
+                                    <span>linkedin.com/in/atul-bahuguna</span>
+                                </div>
+                            </a>
+                            <a href="https://github.com/bahuguna18" target="_blank" class="contact-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                <div>
+                                    <h4>GitHub</h4>
+                                    <span>github.com/bahuguna18</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- JSON Contact Terminal -->
+                    <div class="contact-form-wrapper scroll-reveal">
+                        <div class="terminal-card">
+                            <div class="terminal-header">
+                                <div class="terminal-controls">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <div class="terminal-title">message_sender.json</div>
+                            </div>
+                            <form id="contact-form" class="json-form">
+                                <div class="json-container">
+                                    <span class="json-bracket">{</span>
+                                    <div class="json-field">
+                                        <span class="json-key">"sender_name"</span><span class="json-colon">:</span>
+                                        <input type="text" class="json-val" name="name" placeholder='&quot;John Doe&quot;' required>
+                                    </div>
+                                    <div class="json-field">
+                                        <span class="json-key">"sender_email"</span><span class="json-colon">:</span>
+                                        <input type="email" class="json-val" name="email" placeholder='&quot;john@example.com&quot;' required>
+                                    </div>
+                                    <div class="json-field">
+                                        <span class="json-key">"subject"</span><span class="json-colon">:</span>
+                                        <input type="text" class="json-val" name="subject" placeholder='&quot;Project Collaboration&quot;' required>
+                                    </div>
+                                    <div class="json-field align-top">
+                                        <span class="json-key">"message_payload"</span><span class="json-colon">:</span>
+                                        <textarea class="json-val json-textarea" name="message" placeholder='&quot;Hello Atul, I would love to connect to discuss...&quot;' required></textarea>
+                                    </div>
+                                    <span class="json-bracket">}</span>
+                                </div>
+                                <button type="submit" class="btn btn-primary submit-btn">
+                                    <i data-lucide="send" class="btn-icon"></i> Send Mail
+                                </button>
+                            </form>
+                            <div id="contact-success" class="terminal-success hidden">
+                                <div class="terminal-success-header">
+                                    <i data-lucide="check-circle" class="success-icon"></i>
+                                    <span>200 OK: Payload Delivered</span>
+                                </div>
+                                <pre class="terminal-success-body">
+{
+  "status": "success",
+  "message": "Thank you for reaching out! I will respond to your email shortly.",
+  "timestamp": "<span id="success-timestamp"></span>"
+}
+                                </pre>
+                                <button id="reset-form-btn" class="btn btn-secondary btn-sm">Send Another Payload</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Atul Bahuguna. Architected with Agentic AI & Modern CSS.</p>
+            <div class="footer-links">
+                <a href="#hero">Top</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Terminal Diagnostic Modal -->
+    <div id="terminal-modal" class="modal-wrapper">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-container glass-panel">
+            <div class="modal-header">
+                <div class="terminal-controls">
+                    <span class="dot red" id="modal-close-btn-dot" style="cursor: pointer;"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="modal-title" id="modal-title-text">System Diagnostics: [CMD]</div>
+                <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-body-content">
+                <!-- Content gets dynamically populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Script -->
+    <script src="script.js"></script>
+</body>
+</html>
