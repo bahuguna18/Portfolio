@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { text: `
                 <div class="terminal-list">
                     <div class="terminal-list-item"><strong>LeetCode Knight:</strong> Top 2% globally (2000+ rating | handle: <a href="https://leetcode.com/u/WhyAlways_Me/" target="_blank" style="color:var(--accent-cyan);">WhyAlways_Me</a>)</div>
-                    <div class="terminal-list-item"><strong>Codeforces Specialist:</strong> Rating 1590+ (handle: <a href="https://codeforces.com/profile/WowCoder" target="_blank" style="color:var(--accent-purple);">WowCoder</a>)</div>
+                    <div class="terminal-list-item"><strong>Codeforces Specialist:</strong> Rating 1590+ (handle: <a href="https://codeforces.com/profile/officialWowCoder" target="_blank" style="color:var(--accent-purple);">officialWowCoder</a>)</div>
                     <div class="terminal-list-item"><strong>CodeChef Global:</strong> Rank 13 worldwide</div>
                     <div class="terminal-list-item"><strong>B.Tech Computer Science:</strong> Graphic Era Hill University (CGPA 83.33%)</div>
                 </div>
@@ -448,13 +448,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     <span class="modal-ach-metric">Knight</span>
                     <span class="modal-ach-desc">Rating 2000+, Top 2% globally (Handle: WhyAlways_Me)</span>
                 </a>
-                <a href="https://codeforces.com/profile/WowCoder" target="_blank" class="modal-ach-card purple clickable-card">
+                <a href="https://codeforces.com/profile/officialWowCoder" target="_blank" class="modal-ach-card purple clickable-card">
                     <span class="modal-ach-title">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="modal-ach-icon"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
                         Codeforces
                     </span>
                     <span class="modal-ach-metric">Specialist</span>
-                    <span class="modal-ach-desc">Rating exceeding 1590 (Handle: WowCoder)</span>
+                    <span class="modal-ach-desc">Rating exceeding 1590 (Handle: officialWowCoder)</span>
                 </a>
                 <div class="modal-ach-card indigo">
                     <span class="modal-ach-title">
